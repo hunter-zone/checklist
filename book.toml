@@ -1,0 +1,6 @@
+[book]
+title = 'Checklist'
+authors = ["mashunter"]
+language = "en"
+multilingual = false
+src = "src"
