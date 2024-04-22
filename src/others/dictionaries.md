@@ -134,9 +134,12 @@ iplis.ru
 02ip.ru
 ```
 
-## Tunneling services
+## Tunneling services 
+
+## Port Forwarding Service 
 
 ```
+https://cloudflare.com/
 https://localxpose.io/
 https://serveo.net/
 https://ngrok.com/
@@ -144,6 +147,8 @@ https://localtunnel.me/
 https://openport.io/
 https://pagekite.net/
 ```
+Port Forwarding with Cloudflare : https://medium.com/@mashunter/free-port-forwarding-fca46640d574
+port forwarding with Ngrok : https://medium.com/@mashunter/port-forwarding-with-ngrok-by-kali-nethunter-ab314cc4c9ef
 
 ## Default credentials lists
 
