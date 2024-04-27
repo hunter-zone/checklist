@@ -69,6 +69,7 @@
 
 # Web-Service 
 
+ - [Browser Extension](enumeration/webservices/Mozilla-extension.md)
  - [Web Technologies](enumeration/webservices/README.md)
  - [APIs](enumeration/webservices/apis.md)
  - [JS](enumeration/webservices/js.md)
