@@ -208,4 +208,22 @@ find APPPATH -iname "*localstorage-wal" -> Mirar a mano
 # IDB
 https://github.com/dmayer/idb
 ```
+# Perfect way for Mobile App Testing 
 
+```
+1. Static Mobile App Testing
+.apk  Website/ https://mobexler.com/ (MobSF)
+2. (Impact on Mobile) Genny Motion + Santoku
+a. Logcat 
+b. Shared preferences
+c. Sqlite database 
+3. Mobile with BurpSuite
+4. Client Side (GUI based Testing)
+
+Credit: 
+https://mobexler.com/checklist.htm#an... 
+https://github.com/MobSF/Mobile-Secur...
+https://www.genymotion.com/download/
+https://www.virtualbox.org/
+http://demo.testfire.net/
+```
