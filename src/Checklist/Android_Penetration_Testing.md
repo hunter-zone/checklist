@@ -1869,4 +1869,47 @@ In Android, a memory dump is a snapshot of the device's current system memory. I
 <br/>
 <br/>
 
+## Important Tools
+
+* [Yaazhini](https://www.vegabird.com/docs/yaazhini/)
+* [Frida](https://frida.re/)
+* [Objection](https://github.com/sensepost/objection)
+* [Runtime Mobile Security (RMS)](https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security)
+* [House](https://github.com/nccgroup/house)
+* [APKTool](https://ibotpeaches.github.io/Apktool/)
+* [JADx](https://github.com/skylot/jadx)
+* [JD-GUI](http://java-decompiler.github.io/)
+* [APKLeaks](https://github.com/dwisiswant0/apkleaks)
+* [Fridump](https://github.com/Nightbringer21/fridump)
+* [Drozer](https://github.com/FSecureLABS/drozer)
+* [MobSF Mobile Security Framework](https://mobsf.github.io/Mobile-Security-Framework-MobSF/)
+
+# Vulnerable & Test Applications
+
+* [DIVA Android](https://www.payatu.com/damn-insecure-and-vulnerable-app/) - DIVA (Damn Insecure and Vulnerable App) is designed to teach developers/QA/security professionals about common flaws due to insecure coding practices.
+* [InsecureBank v2](https://github.com/dineshshetty/Android-InsecureBankv2) - A vulnerable Android application designed to teach various Android vulnerabilities.
+* [Uncrackable Mobile Apps](https://github.com/OWASP/owasp-mstg/tree/master/Crackmes) - These apps are part of the OWASP Mobile Security Testing Guide and serve as practice for reverse engineering and mobile app security testing.
+* [VyAPI](https://github.com/B3N1N/VyAPI) - A vulnerable Android app designed for learning purposes.
+* [DVHMA](https://github.com/davidtavarez/dvhma) - Damn Vulnerable Hybrid Mobile App, intended for security enthusiasts to learn and practice hybrid mobile application security.
+* [WaTF Bank](https://github.com/duo-labs/android-watf) - Web and mobile application security practice tool.
+* [Injured Android](https://github.com/B3N1N/InjuredAndroid) - A vulnerable Android application for learning Android security.
+* [Sieve mwrlabs](https://github.com/mwrlabs/drozer-sieve) - A vulnerable app to learn about various Android security aspects.
+* [Vuldroid](https://github.com/jaiswalakshansh/Vuldroid) - A vulnerable Android app for security enthusiasts.
+* [Oversecured Vulnerable Android App](https://github.com/oversecured/ovaa) - An app designed to teach mobile application security.
+
+
+# Guides & References
+
+* [Mobile App Pentest Cheat Sheet](https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet)
+* [Mobile Apps Pentesting Checklist](https://book.hacktricks.xyz/mobile-apps-pentesting/android-checklist)
+* [OWASP Mobile Security Testing Guide](https://owasp.org/www-project-mobile-security-testing-guide/)
+* [Android Reports and Resources](https://github.com/B3nac/Android-Reports-and-Resources)
+* [Android Security List](https://github.com/wtsxDev/android-security-list)
+* [Mobile Security Testing Guide](https://mobile-security.gitbook.io/mobile-security-testing-guide/)
+* [Awesome Android Security](https://github.com/saeidshirazi/awesome-android-security)
+* [Android Security Awesome](https://github.com/ashishb/android-security-awesome)
+
+
+
+
 **I tried my best to enrich this checklist. Please feel free to share your key findings and knowledge. Thank you🙏**
