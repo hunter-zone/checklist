@@ -8,6 +8,7 @@
 - [Android Penetration Testing](./Checklist/Android_Penetration_Testing.md)
 - [Web Application](./Checklist/Web-App-Pentest-Checklist.md)
  - [Report Writing](./Checklist/report_writing.md)
+ - [Bug Bounty Tools](./Checklist/bug-bounty_tools.md)
 ---
 
 # Recon
