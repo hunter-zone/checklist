@@ -37,6 +37,17 @@
 - [Recon](sections/recon.md)
 - [Exploiting](sections/others.md)
 - [Enumeration](sections/enum/README.md)
+   - [File analysis](sections/enum/files.md)
+  - [Ports](sections/enum/ports.md)
+  - [Web services](web/webservices.md)
+  - [Cloud](sections/enum/cloud.md). </br> 
+  - [AWS](sections/enum/cloud.md#aws)
+  - [Azure](sections/enum/cloud.md#azure)
+  - [OSINT Cloud](sections/enum/cloud.md#cloud-osint)
+  - [Docker/Kubernetes](sections/enum/cloud.md#docker)
+  - [CDN](sections/enum/cloud.md#cdn-domain-fronting)
+
+
 
 # Web 
 
