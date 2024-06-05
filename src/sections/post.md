@@ -96,14 +96,35 @@ grep -vE "nologin" /etc/passwd
 # Network info
 cat /proc/net/arp
 cat /proc/net/fib_trie
-cat /proc/net/fib_trie | grep "|--"   | egrep -v "0.0.0.0| 127."
-awk '/32 host/ { print f } {f=$2}' <<< "$(0; i-=2) {
-        ret = ret"."hextodec(substr(str,i,2))
+
+# Filter out lines containing "0.0.0.0" or "127." from the fib_trie output
+cat /proc/net/fib_trie | grep "|--" | egrep -v "0.0.0.0|127."
+
+# Extracting IP addresses from /proc/net/tcp and printing them
+awk '
+function hextodec(str) {
+    ret = 0
+    for (i=1; i<=length(str); i++) {
+        ret = ret * 16 + (index("0123456789abcdef", tolower(substr(str, i, 1))) - 1)
     }
-    ret = ret":"hextodec(substr(str,index(str,":")+1,4))
     return ret
-} 
-NR > 1 {{if(NR==2)print "Local - Remote";local=getIP($2);remote=getIP($3)}{print local" - "remote}}' /proc/net/tcp
+}
+function getIP(str) {
+    ret = ""
+    for (i = 1; i <= 8; i += 2) {
+        ret = hextodec(substr(str, i, 2)) "." ret
+    }
+    ret = substr(ret, 1, length(ret) - 1)
+    ret = ret ":" hextodec(substr(str, 10, 4))
+    return ret
+}
+NR > 1 {
+    if (NR == 2) print "Local - Remote"
+    local = getIP($2)
+    remote = getIP($3)
+    print local " - " remote
+}' /proc/net/tcp
+
 
 # Netstat without netstat 2
 echo "YXdrICdmdW5jdGlvbiBoZXh0b2RlYyhzdHIscmV0LG4saSxrLGMpewogICAgcmV0ID0gMAogICAgbiA9IGxlbmd0aChzdHIpCiAgICBmb3IgKGkgPSAxOyBpIDw9IG47IGkrKykgewogICAgICAgIGMgPSB0b2xvd2VyKHN1YnN0cihzdHIsIGksIDEpKQogICAgICAgIGsgPSBpbmRleCgiMTIzNDU2Nzg5YWJjZGVmIiwgYykKICAgICAgICByZXQgPSByZXQgKiAxNiArIGsKICAgIH0KICAgIHJldHVybiByZXQKfQpmdW5jdGlvbiBnZXRJUChzdHIscmV0KXsKICAgIHJldD1oZXh0b2RlYyhzdWJzdHIoc3RyLGluZGV4KHN0ciwiOiIpLTIsMikpOyAKICAgIGZvciAoaT01OyBpPjA7IGktPTIpIHsKICAgICAgICByZXQgPSByZXQiLiJoZXh0b2RlYyhzdWJzdHIoc3RyLGksMikpCiAgICB9CiAgICByZXQgPSByZXQiOiJoZXh0b2RlYyhzdWJzdHIoc3RyLGluZGV4KHN0ciwiOiIpKzEsNCkpCiAgICByZXR1cm4gcmV0Cn0gCk5SID4gMSB7e2lmKE5SPT0yKXByaW50ICJMb2NhbCAtIFJlbW90ZSI7bG9jYWw9Z2V0SVAoJDIpO3JlbW90ZT1nZXRJUCgkMyl9e3ByaW50IGxvY2FsIiAtICJyZW1vdGV9fScgL3Byb2MvbmV0L3RjcCAKqtc" | base64 -d | sh
