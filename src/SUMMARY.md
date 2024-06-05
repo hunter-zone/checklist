@@ -29,6 +29,15 @@
 - [SSL/TLS](enumeration/ssl-tls.md)
 - [Ports](enumeration/ports.md)
 
+# Section 
+
+- [Exploitation](sections/exploitation.md)
+- [Post-exploitation](sections/post.md)
+- [Mobile](sections/mobile.md)
+- [Recon](sections/recon.md)
+- [Exploiting](sections/others.md)
+- [Enumeration](sections/enum/README.md)
+
 # Web 
 
 - [Web Attacks](enumeration/web/README.md)
