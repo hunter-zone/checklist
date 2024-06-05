@@ -4,7 +4,7 @@ description: Find attack vectors in your victim
 
 # Enumeration
 
-* [File analysis](./files.md)
+* [File analysis](files.md)
 * [Ports](ports.md)
 * [Web](web/)
   * [Web services](web/webservices.md)
