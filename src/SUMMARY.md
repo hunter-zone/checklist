@@ -39,7 +39,8 @@
 - [Enumeration](sections/enum/README.md)
    - [File analysis](sections/enum/files.md)
   - [Ports](sections/enum/ports.md)
-  - [Web services](web/webservices.md)
+  - [Web](sections/enum/web/README.md)
+  - [Web services](sections/enum/web/webservices.md)
   - [Cloud](sections/enum/cloud.md). </br> 
   - [AWS](sections/enum/cloud.md#aws)
   - [Azure](sections/enum/cloud.md#azure)
