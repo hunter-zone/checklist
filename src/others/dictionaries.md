@@ -147,8 +147,8 @@ https://localtunnel.me/
 https://openport.io/
 https://pagekite.net/
 ```
-Port Forwarding with Cloudflare : https://medium.com/@mashunter/free-port-forwarding-fca46640d574
-port forwarding with Ngrok : https://medium.com/@mashunter/port-forwarding-with-ngrok-by-kali-nethunter-ab314cc4c9ef
+* [Port Forwarding with Cloudflare](https://medium.com/@mashunter/free-port-forwarding-fca46640d574)
+* [Port forwarding with Ngrok](https://medium.com/@mashunter/port-forwarding-with-ngrok-by-kali-nethunter-ab314cc4c9ef)
 
 ## Default credentials lists
 
