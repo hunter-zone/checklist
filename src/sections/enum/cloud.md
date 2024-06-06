@@ -1106,7 +1106,7 @@ https://github.com/[git account]/[repo name]/commit/[commit ID]
 https://github.com/zricethezav/gitleaks/commit/744ff2f876813fbd34731e6e0d600e1a26e858cf
 ```
 
-## Docker/Kubernetes
+# Docker/Kubernetes
 
 ### Docker basics
 
@@ -1461,7 +1461,7 @@ ping whatever;/root/docker/docker -H unix:///custom/docker/docker.sock ps
 ping whatever;/root/docker/docker -H unix:///custom/docker/docker.sock images
 ```
 
-## CDN - Domain Fronting
+# CDN - Domain Fronting
 
 ```text
 **Tools**
