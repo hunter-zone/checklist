@@ -1,10 +1,10 @@
 # Cloud
 
-  - [AWS](sections/enum/cloud.md#aws)
-  - [Azure](sections/enum/cloud.md#azure)
-  - [OSINT Cloud](sections/enum/cloud.md#cloud-osint)
-  - [Docker/Kubernetes](sections/enum/cloud.md#docker)
-  - [CDN](sections/enum/cloud.md#cdn-domain-fronting)
+  - [AWS](#aws)
+  - [Azure](#azure)
+  - [OSINT Cloud](#cloud-osint)
+  - [Docker/Kubernetes](#docker)
+  - [CDN](#cdn-domain-fronting)
 
 
 ## General
